@@ -1,0 +1,61 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upload CSV — Netflix Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="center">
+    <h2>Upload CSV (netflix_titles.csv)</h2>
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+    <form method="POST" enctype="multipart/form-data">
+    <label for="file">Upload CSV File:</label>
+    <input type="file" id="file" name="file" accept=".csv" required>
+
+    <button type="submit">Upload & Analyze</button>
+</form>
+
+    <p>Sample: columns expected - type, rating, country, duration, listed_in, cast, director, release_year, date_added</p>
+  </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV — Netflix Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="hero-bg"></div>
+
+    <div class="container fade-in">
+        <h1 class="title">Upload CSV <span>(netflix_titles.csv)</span></h1>
+
+        <form method="POST" enctype="multipart/form-data" class="upload-form">
+            <label class="label">Upload CSV File:</label>
+
+            <div class="file-input">
+              <label for="file">Choose CSV File:</label>
+                <input type="file" name="file" id="file" accept=".csv" required>
+            </div>
+
+            <button type="submit" class="btn">Upload & Analyze</button>
+
+            <p class="sample-text">
+                <strong>Sample:</strong> columns expected - type, rating, country, duration, listed_in,
+                cast, director, release_year, date_added
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>

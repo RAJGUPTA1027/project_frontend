@@ -1,0 +1,8 @@
+Flask==2.3.2
+pandas
+matplotlib
+seaborn
+wordcloud
+numpy
+python-dateutil
+Pillow

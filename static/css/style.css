@@ -1,0 +1,133 @@
+/* body { font-family: Arial, sans-serif; background:#0b2a66;color:#eaf0fb; }
+.center{max-width:720px;margin:40px auto;padding:20px;background:rgba(255,255,255,0.03);border-radius:10px}
+input[type=file]{display:block;margin:10px 0}
+button{padding:10px 14px;border-radius:6px;background:linear-gradient(90deg,#1e3a8a,#2563eb);color:white;border:none}
+.container{max-width:1100px;margin:20px auto}
+.images{display:flex;flex-wrap:wrap;gap:12px}
+.images img{width:320px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+.summary div{margin-bottom:6px}
+.error{color:#ff7b7b;background:rgba(255,0,0,0.06);padding:6px;border-radius:6px;margin-bottom:8px} */
+
+
+/* Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg,#001F54,#002B7F,#133E7C);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphism box */
+.container {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 40px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    width: 550px;
+    animation: slideUp 0.7s ease-out;
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.title span {
+    color: #BBDAFF;
+    font-size: 18px;
+}
+
+/* Label */
+.label {
+    font-weight: 600;
+    color: #E4EFFF;
+    font-size: 16px;
+}
+
+/* File input */
+.file-input input[type="file"] {
+    margin-top: 8px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* Upload button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #1A73E8;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover {
+    background: #0F5FD0;
+    transform: translateY(-3px);
+}
+
+/* Sample text */
+.sample-text {
+    margin-top: 20px;
+    color: #DDE8FF;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Fade animation */
+@keyframes slideUp {
+    0% { transform: translateY(40px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* -----------------------------------------------------
+   OLD .img img & .img BLOCKS ARE REMOVED COMPLETELY!!!!
+   ----------------------------------------------------- */
+
+
+/* MAIN insights grid */
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Card box */
+.insight-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.insight-card:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive images */
+.insight-card img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 10px;
+}

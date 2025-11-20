@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analysis Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Analysis Results</h2>
+    <div class="summary">
+      <div>Total rows: {{ summary.total_rows }}</div>
+      <div>Movies: {{ summary.movies }}</div>
+      <div>TV Shows: {{ summary.tv_shows }}</div>
+      <div>Unique countries: {{ summary.unique_countries }}</div>
+      <div>Top genres:
+        <ul>
+        {% for g, c in summary.top_genres.items() %}
+          <li>{{ g }} — {{ c }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <h3>Visuals</h3>
+   <div class="images">
+    <div class="insights-grid">
+        {% for img in images %}
+            <div class="insight-card">
+                <img src="{{ img }}" alt="insight" loading="lazy">
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+    <a href="{{ url_for('index') }}">Upload another file</a>
+  </div>
+</body>
+</html>
