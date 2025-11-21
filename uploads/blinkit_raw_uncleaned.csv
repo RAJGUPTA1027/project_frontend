@@ -1,0 +1,12 @@
+Order_ID,Order Date,City,Customer_Name,Category,Product,Quantity,Price_per_Unit,Discount,Delivery_Time,Delivery_Status,Payment_Mode
+B1001,1/10/25,delhi,Riya sharma,grocery,Milk 1L,2,₹55,5%,18 mins,delivered,upi
+B1002,01-10-25,Mumbai,Aarav Patel,Snack,chips pack,three,30,0,25min,Delivered,Cash
+B1003,2025/10/02,Bengaluru,,fruits,Banana,1,45,0,,delivered,Upi
+B1004,2/10/25,Delhi,Rohan Gupta,Vegetables,tomato 1KG,2,40,ten%,22,Delivered,CARD
+B1005,3/10/25,pune,kavya iyer,Beverage,Pepsi 1L,,seventy,0%,35,CANCELLED,cash
+B1005,3/10/25,pune,kavya iyer,Beverage,Pepsi 1L,,seventy,0%,35,CANCELLED,cash
+B1006,4-10-25,delhii,aditya mehta,grocery,rice 5kg,1,300,15,40 mins,Delivered,Card
+B1007,04/10/25,Hyderabad,Ananya Rao,Snacks,Biscuits Pack,4,25,0,20,Delivered,
+B1008,5/10/25,Mumbai,Vihaan Nair,Fruits,apple 1kg,2,160,5,28,delivered,UPI
+B1009,06/10/25,Delhi,tanvi joshi,Dairy,butter,1,120,,18,Delivered,Upi
+B1010,2025-10-07,,Arjun Singh,grocery,Atta 10kg,one,450,10,thirty,Delivered,card
